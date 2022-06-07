@@ -1,0 +1,278 @@
+{
+    "name" : "Manya",
+    "appid" : "__UNI__F30B9D1",
+    "description" : "©Manya",
+    "versionName" : "1.3.1",
+    "versionCode" : 131,
+    "transformPx" : false,
+    /* 5+App特有相關 */
+    "app-plus" : {
+        "compatible" : {
+            "ignoreVersion" : true
+        },
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : false,
+            "autoclose" : false,
+            "delay" : 0
+        },
+        "modules" : {
+            "VideoPlayer" : {},
+            "LivePusher" : {},
+            "Maps" : {},
+            "Share" : {},
+            "Payment" : {},
+            "Webview-x5" : {}
+        },
+        /* 應用發布信息 */
+        "distribute" : {
+            /* android打包配置 1.0.3升級 熱更新 添加權限REQUEST_INSTALL_PACKAGES 同時修改了 targetSdkVersion 為 26 以適配 Android 9.0 */
+            "android" : {
+                "packagename" : "com.shopyjp.www",
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_MOCK_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_TASKS\"/>",
+                    "<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>"
+                ],
+                "targetSdkVersion" : 30,
+                "schemes" : "shopyjp",
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "appid" : "com.shopyjp.www",
+                "urlschemewhitelist" : [ "baidumap", "iosamap" ],
+                "idfa" : false,
+                "urltypes" : "shopyjp",
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "ユーザープロフィール写真をアップロードおよび変更できるようにするには、フォトアルバムへのアクセスを許可してください",
+                    "NSPhotoLibraryAddUsageDescription" : "ユーザープロフィール写真をアップロードおよび変更できるようにするには、フォトアルバムへのアクセスを許可してください",
+                    "NSCameraUsageDescription" : "ユーザープロフィール写真をアップロードおよび変更できるようにするには、カメラへのアクセスを許可してください",
+                    "NSLocationWhenInUseUsageDescription" : "あなたを近くの体験店と一致させるために、あなたの場所へのアクセスを許可してください",
+                    "NSLocationAlwaysUsageDescription" : "あなたを近くの体験店と一致させるために、あなたの場所へのアクセスを許可してください",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "あなたを近くの体験店と一致させるために、あなたの場所へのアクセスを許可してください",
+                    "NSMicrophoneUsageDescription" : "音声通話をするには、マイクへのアクセスを許可してください"
+                }
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "speech" : {
+                    "ifly" : {}
+                },
+                "ad" : {},
+                "payment" : {
+                    "appleiap" : {}
+                },
+                "push" : {
+                    "unipush" : {}
+                },
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "",
+                        "appsecret" : "",
+                        "UniversalLinks" : "https://api.manyajp.com/"
+                    },
+                    "apple" : {}
+                },
+                "share" : {},
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "d8b84cf540bcca9928db69b0119fc152",
+                        "appkey_android" : "6c3f7522aab215e0704225adaad9f73e"
+                    }
+                }
+            },
+            "orientation" : [ "portrait-primary" ],
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "",
+                    "xxhdpi" : "",
+                    "xhdpi" : ""
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "",
+                        "landscape-896h@3x" : ""
+                    }
+                },
+                "androidStyle" : "common",
+                "iosStyle" : "common"
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            }
+        },
+        /* 不使用原生占位 http://ask.dcloud.net.cn/article/35564 */
+        "safearea" : {
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+        "compilerVersion" : 3,
+        "nvueLaunchMode" : "fast",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    /* 快應用特有相關 */
+    "quickapp" : {},
+    /* 小程序特有相關 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : true,
+            "es6" : true,
+            "minified" : true,
+            "postcss" : true
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "ポジショニング機能を実証する"
+            }
+        },
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-qq" : {
+        "appid" : "11*****49",
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "setting" : {
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true,
+            "urlCheck" : true
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "モールは現在地を取得し、近くの商品を照会し、ショッピングアドレスを改善する必要があります"
+            }
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "appid" : "",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-baidu" : {
+        "usingComponents" : true,
+        "appid" : "",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true,
+        "appid" : "",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "h5" : {
+        "template" : "index.html",
+        "router" : {
+            "mode" : "history",
+            "base" : "/"
+        },
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "V3JBZ-C7Z36-BL7S6-M67TX-6WORS-2TBMN"
+                }
+            }
+        },
+        "domain" : "https://api.manyajp.com",
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "title" : "SHOPYJP",
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "devServer" : {
+            "https" : true,
+            "port" : 80, //端口號
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api" : {
+                    "target" : "https://api.manyajp.com", //目標接口域名
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : true, //設置支持https協議的代理
+                    "pathRewrite" : {
+                        "^/api" : ""
+                    }
+                }
+            }
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false
+    }
+}
+/* 5+App特有相關 */
+
